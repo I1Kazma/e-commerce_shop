@@ -1,7 +1,6 @@
 import CategoryList from "@/components/CategoryList";
 import ProductList from "@/components/ProductList";
 import Slider from "@/components/Slider";
-import { wixClientServer } from "@/lib/wixClientServer";
 import Skeleton from "@/components/Skeleton";
 import { Suspense, useContext, useEffect } from "react";
 
