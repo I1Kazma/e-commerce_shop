@@ -5,7 +5,7 @@ const CategoryList = async () => {
   const cats = [
     {
       _id: 1,
-      name: "Summer Sale Collections",
+      name: "Category Name",
       description: "Sale! Up to 50% off!",
       media:
         "https://i.pinimg.com/736x/dc/46/8b/dc468be47bc0cf1324c092f776383709.jpg",
@@ -14,7 +14,7 @@ const CategoryList = async () => {
     },
     {
       _id: 2,
-      name: "Winter Sale Collections",
+      name: "Category Name",
       description: "Sale! Up to 50% off!",
       media:
         "https://i.pinimg.com/736x/c1/f2/1d/c1f21dd2419929fe033ebf550773d148.jpg",
@@ -23,7 +23,7 @@ const CategoryList = async () => {
     },
     {
       _id: 3,
-      name: "Spring Sale Collections",
+      name: "Category Name",
       description: "Sale! Up to 50% off!",
       media:
         "https://i.pinimg.com/736x/5d/29/e5/5d29e5fb77e68fc4731ae45e49babecd.jpg",
@@ -32,7 +32,7 @@ const CategoryList = async () => {
     },
     {
       _id: 4,
-      name: "Spring Sale Collections",
+      name: "Category Name",
       description: "Sale! Up to 50% off!",
       media:
         "https://i.pinimg.com/736x/5d/29/e5/5d29e5fb77e68fc4731ae45e49babecd.jpg",
@@ -41,7 +41,7 @@ const CategoryList = async () => {
     },
     {
       _id: 5,
-      name: "Spring Sale Collections",
+      name: "Category Name",
       description: "Sale! Up to 50% off!",
       media:
         "https://i.pinimg.com/736x/5d/29/e5/5d29e5fb77e68fc4731ae45e49babecd.jpg",
@@ -50,7 +50,7 @@ const CategoryList = async () => {
     },
     {
       _id: 6,
-      name: "Spring Sale Collections",
+      name: "Category Name",
       description: "Sale! Up to 50% off!",
       media:
         "https://i.pinimg.com/736x/5d/29/e5/5d29e5fb77e68fc4731ae45e49babecd.jpg",
