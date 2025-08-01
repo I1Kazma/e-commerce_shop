@@ -1,9 +1,28 @@
 "use client";
 
+import { wixClientServer } from "@/lib/wixClientServer";
+import { products } from "@wix/stores";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductList = () => {
+const PRODUCT_PER_PAGE = 8;
+
+const ProductList = async ({
+  categoryId,
+  limit,
+  searchParams,
+}: {
+  categoryId: string;
+  limit?: number;
+  searchParams?: any;
+}) => {
+  const wixClient = await wixClientServer();
+  const res = await wixClient.products
+    .queryProducts()
+    .eq()
+    .limit(limit || PRODUCT_PER_PAGE)
+    .find();
+  console.log(res);
   return (
     <div className="mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
       <Link
@@ -31,7 +50,7 @@ const ProductList = () => {
           <span className="font-semibold">$49</span>
         </div>
         <div className="text-sm text-gray-500">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </div>
         <button className="rounded-2xl ring-1 ring-main text-main w-max py-2 px-4 text-xs hover:bg-main hover:text-white transition ease-in-out">
           Add to Cart
@@ -93,7 +112,7 @@ const ProductList = () => {
           <span className="font-semibold">$49</span>
         </div>
         <div className="text-sm text-gray-500">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </div>
         <button className="rounded-2xl ring-1 ring-main text-main w-max py-2 px-4 text-xs hover:bg-main hover:text-white transition ease-in-out">
           Add to Cart
@@ -124,7 +143,7 @@ const ProductList = () => {
           <span className="font-semibold">$49</span>
         </div>
         <div className="text-sm text-gray-500">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </div>
         <button className="rounded-2xl ring-1 ring-main text-main w-max py-2 px-4 text-xs hover:bg-main hover:text-white transition ease-in-out">
           Add to Cart
