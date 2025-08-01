@@ -12,11 +12,12 @@
     "@wix/bookings": "^1.0.977",
     "@wix/members": "^1.0.307",
     "@wix/sdk": "^1.15.26",
-    "@wix/stores": "^1.0.498",
+    "@wix/stores": "^1.0.400",
+    "@wix/ecom": "^1.0.1238",
     "js-cookie": "^3.0.5",
     "next": "14.2.2",
-    "react": "^19",
-    "react-dom": "^19"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/js-cookie": "^3.0.6",
